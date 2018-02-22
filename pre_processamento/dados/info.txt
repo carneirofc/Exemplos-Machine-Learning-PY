@@ -1,0 +1,10 @@
+Dados de Entrada. Info Países. Col.0
+Germany 3
+Argentina 0
+Spain 4
+France 2
+Brazil 1
+----------------------------------------
+Conversao coluna saida. Col.0
+Yes 1
+No 0
