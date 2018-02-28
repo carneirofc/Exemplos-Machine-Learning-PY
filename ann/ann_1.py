@@ -1,9 +1,12 @@
-import pandas as pd
 import copy
+
+import pandas as pd
 
 # RowNumber,CustomerId,Surname,CreditScore,Geography,Gender,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,Exited
 # Geography Col. 1 -> HotLabel
 # Gender Col. 2 -> LabelEncoder
+from util.PlotCallback import PlotCallback
+
 dataset = pd.read_csv('Churn_Modelling.csv')
 arquivo_aux = open("dados\info.txt", "w+")
 
@@ -47,7 +50,7 @@ from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random_state=0)
 
 # Normalização
-from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.preprocessing import StandardScaler
 
 sc_x = StandardScaler()
 x_train = sc_x.fit_transform(x_train)
@@ -56,10 +59,10 @@ x_test = sc_x.transform(x_test)
 arquivo_aux.close()
 
 # Implementando a rna
-import keras
 from keras.models import Sequential
 from keras.layers import Dense
 
+plot_callback = PlotCallback()
 rna = Sequential()
 rna.add(Dense(6, activation='tanh', input_shape=(12,)))
 rna.add(Dense(6, activation='tanh', input_shape=(12,)))
@@ -67,7 +70,7 @@ rna.add(Dense(1, activation='linear'))
 
 rna.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
 rna
-rna.fit(x_train, y_train, epochs=100)
+rna.fit(x_train, y_train, epochs=20, callbacks=[plot_callback])
 
 y_pred = rna.predict(x_test)
 y_pred = (y_pred > 0.5)
