@@ -62,11 +62,12 @@ from keras.layers import Dense
 
 rna = Sequential()
 rna.add(Dense(6, activation='tanh', input_shape=(12,)))
-rna.add(Dense(1, activation='tanh'))
+rna.add(Dense(6, activation='tanh', input_shape=(12,)))
+rna.add(Dense(1, activation='linear'))
 
-rna.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-
-rna.fit(x_train, y_train, epochs=100, batch_size=10)
+rna.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
+rna
+rna.fit(x_train, y_train, epochs=100)
 
 y_pred = rna.predict(x_test)
 y_pred = (y_pred > 0.5)
