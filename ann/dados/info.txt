@@ -3,10 +3,10 @@ Germany 1
 France 0
 Spain 2
 Dados Entrada Col. 2 Sexo (Encoder)
-Female 1 
-Female 2 
-Male 0 
-Male 1 
 Female 0 
 Male 2 
+Male 1 
+Male 0 
+Female 2 
+Female 1 
 Primeiro conj. Geography
