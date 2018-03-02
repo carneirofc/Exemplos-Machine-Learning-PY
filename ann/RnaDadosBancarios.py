@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
 from util.GraficoPlotCallback import PlotCallback
-from util.print_cm import print_cm
+from util.visualizacao import print_cm
 
 dataset = pd.read_csv('Churn_Modelling.csv')
 arquivo_aux = open("dados/info.txt", "w+")
@@ -58,7 +58,6 @@ rna.add(Dense(1, activation='linear'))
 
 rna.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
 rna.fit(x_train, y_train, epochs=200, batch_size=21)
-#rna.fit(x_train, y_train, epochs=200, callbacks=[plot_callback], batch_size=21)
 
 y_pred = rna.predict(x_test)
 y_pred = (y_pred > 0.8)
