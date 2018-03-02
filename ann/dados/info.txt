@@ -1,12 +1,8 @@
 Dados Entrada Col. 1 Geography (OneHotEncoder)
+Spain 2
 Germany 1
 France 0
-Spain 2
 Dados Entrada Col. 2 Sexo (Encoder)
-Female 0 
-Male 2 
 Male 1 
-Male 0 
-Female 2 
-Female 1 
+Female 0 
 Primeiro conj. Geography

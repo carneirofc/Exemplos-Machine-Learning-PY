@@ -4,10 +4,9 @@
     <list default="true" id="90246047-36b8-4e38-b689-754c36160d7e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ann/RnaDadosBancarios.py" afterPath="$PROJECT_DIR$/ann/RnaDadosBancarios.py" />
-      <change beforePath="$PROJECT_DIR$/classificacao_dados/log_reg.py" afterPath="$PROJECT_DIR$/classificacao_dados/log_reg.py" />
-      <change beforePath="$PROJECT_DIR$/classificacao_dados/template.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pre_processamento/PreProcessamento.py" afterPath="$PROJECT_DIR$/pre_processamento/PreProcessamento.py" />
-      <change beforePath="$PROJECT_DIR$/util/print_cm.py" afterPath="$PROJECT_DIR$/util/visualizacao.py" />
+      <change beforePath="$PROJECT_DIR$/ann/dados/info.txt" afterPath="$PROJECT_DIR$/ann/dados/info.txt" />
+      <change beforePath="$PROJECT_DIR$/classificacao_dados/log_reg.py" afterPath="$PROJECT_DIR$/classificacao_dados/RegLinear.py" />
+      <change beforePath="$PROJECT_DIR$/util/visualizacao.py" afterPath="$PROJECT_DIR$/util/visualizacao.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,7 +18,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Exemplos_Machine_Learning_PY$PlotCallback.coverage" NAME="PlotCallback Coverage Results" MODIFIED="1519671186731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Exemplos_Machine_Learning_PY$ann_1.coverage" NAME="ann_1 Coverage Results" MODIFIED="1519654626323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ann" />
-    <SUITE FILE_PATH="coverage/Exemplos_Machine_Learning_PY$log_reg.coverage" NAME="log_reg Coverage Results" MODIFIED="1519959916505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classificacao_dados" />
+    <SUITE FILE_PATH="coverage/Exemplos_Machine_Learning_PY$RegLinear.coverage" NAME="RegLinear Coverage Results" MODIFIED="1519992407096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classificacao_dados" />
+    <SUITE FILE_PATH="coverage/Exemplos_Machine_Learning_PY$RnaDadosBancarios.coverage" NAME="RnaDadosBancarios Coverage Results" MODIFIED="1519993170460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ann" />
+    <SUITE FILE_PATH="coverage/Exemplos_Machine_Learning_PY$log_reg.coverage" NAME="log_reg Coverage Results" MODIFIED="1519992244342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classificacao_dados" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="log_reg.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classificacao_dados/log_reg.py">
+      <file leaf-file-name="RnaDadosBancarios.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="264">
+              <caret line="66" column="82" lean-forward="true" selection-start-line="66" selection-start-column="82" selection-end-line="66" selection-end-column="82" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -73,6 +74,7 @@
       <find>on_train_end</find>
       <find>step</find>
       <find>pr</find>
+      <find>normal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,10 +87,11 @@
         <option value="$PROJECT_DIR$/ann/ann_1.py" />
         <option value="$PROJECT_DIR$/util/Testes.py" />
         <option value="$PROJECT_DIR$/util/print_cm.py" />
-        <option value="$PROJECT_DIR$/ann/RnaDadosBancarios.py" />
         <option value="$PROJECT_DIR$/pre_processamento/PreProcessamento.py" />
-        <option value="$PROJECT_DIR$/util/visualizacao.py" />
         <option value="$PROJECT_DIR$/classificacao_dados/log_reg.py" />
+        <option value="$PROJECT_DIR$/classificacao_dados/RegLinear.py" />
+        <option value="$PROJECT_DIR$/util/visualizacao.py" />
+        <option value="$PROJECT_DIR$/ann/RnaDadosBancarios.py" />
       </list>
     </option>
   </component>
@@ -119,6 +122,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,13 +133,22 @@
             <path>
               <item name="Exemplos-Machine-Learning-PY" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exemplos-Machine-Learning-PY" type="462c0819:PsiDirectoryNode" />
+              <item name="ann" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exemplos-Machine-Learning-PY" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exemplos-Machine-Learning-PY" type="462c0819:PsiDirectoryNode" />
+              <item name="classificacao_dados" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exemplos-Machine-Learning-PY" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exemplos-Machine-Learning-PY" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,27 +182,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.log_reg">
-    <configuration name="PlotCallback" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.RnaDadosBancarios">
+    <configuration name="RegLinear" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classificacao_dados" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Exemplos-Machine-Learning-PY" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/GraficoPlotCallback.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classificacao_dados/RegLinear.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ann_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="RnaDadosBancarios" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -205,38 +218,17 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ann/RnaDadosBancarios.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="log_reg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classificacao_dados" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Exemplos-Machine-Learning-PY" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classificacao_dados/log_reg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.ann_1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.PlotCallback" />
-      <item index="2" class="java.lang.String" itemvalue="Python.log_reg" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.RnaDadosBancarios" />
+      <item index="1" class="java.lang.String" itemvalue="Python.RegLinear" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.log_reg" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ann_1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PlotCallback" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.RnaDadosBancarios" />
+        <item index="1" class="java.lang.String" itemvalue="Python.RegLinear" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519871219975</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="plot classifiers ... para função ...">
+      <created>1519960019329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519960019329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -286,12 +285,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971507" sideWeight="0.505148" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62880886" sideWeight="0.494852" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53878117" sideWeight="0.496139" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73130196" sideWeight="0.494852" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42243767" sideWeight="0.496139" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12612613" sideWeight="0.49473685" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16087516" sideWeight="0.49473685" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5727156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50526315" order="2" side_tool="true" content_ui="tabs" />
@@ -302,7 +302,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4890605" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="0" width="350" height="666" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -337,36 +336,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="plot ...." />
-    <option name="LAST_COMMIT_MESSAGE" value="plot ...." />
+    <MESSAGE value="plot classifiers ... para função ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="plot classifiers ... para função ..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84864">
-          <caret line="3264" column="14" lean-forward="false" selection-start-line="3264" selection-start-column="11" selection-end-line="3264" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -435,9 +418,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -446,7 +427,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,8 +496,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -526,17 +515,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -577,22 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15158">
-          <caret line="603" column="0" lean-forward="false" selection-start-line="603" selection-start-column="0" selection-end-line="603" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/keras/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20800">
-          <caret line="823" column="0" lean-forward="false" selection-start-line="823" selection-start-column="0" selection-end-line="823" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2262">
@@ -630,31 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="3735" column="55" lean-forward="true" selection-start-line="3735" selection-start-column="55" selection-end-line="3735" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ann/dados/info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ann/dados/info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ann/Churn_Modelling.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -663,26 +605,6 @@
         <state relative-caret-position="20540">
           <caret line="811" column="40" lean-forward="false" selection-start-line="811" selection-start-column="36" selection-end-line="811" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_processamento/PreProcessamento.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1322">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="58" column="76" lean-forward="false" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,38 +628,108 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-380">
           <caret line="474" column="0" lean-forward="false" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classificacao_dados/template.py" />
+    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/keras/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="1024" column="0" lean-forward="false" selection-start-line="1024" selection-start-column="0" selection-end-line="1024" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="429" column="19" lean-forward="false" selection-start-line="429" selection-start-column="13" selection-end-line="429" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/py3.6-env/lib/python3.6/site-packages/sklearn/metrics/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="185" column="4" lean-forward="false" selection-start-line="185" selection-start-column="4" selection-end-line="185" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ann/Churn_Modelling.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="121" lean-forward="false" selection-start-line="0" selection-start-column="121" selection-end-line="0" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ann/dados/info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/GraficoPlotCallback.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="1" selection-end-column="36" />
+        <state relative-caret-position="-702">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_processamento/PreProcessamento.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classificacao_dados/Social_Network_Ads.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-936">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classificacao_dados/RegLinear.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/visualizacao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1144">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="e#92#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classificacao_dados/template.py">
+    <entry file="file://$PROJECT_DIR$/ann/RnaDadosBancarios.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classificacao_dados/log_reg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state relative-caret-position="264">
+          <caret line="66" column="82" lean-forward="true" selection-start-line="66" selection-start-column="82" selection-end-line="66" selection-end-column="82" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

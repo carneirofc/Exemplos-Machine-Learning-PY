@@ -1,9 +1,12 @@
 # <script src="https://gist.github.com/zachguo/10296432.js"></script>
 # Retirado do git ...
-from sklearn.base import ClassifierMixin
+import seaborn as sn
+import pandas as pd
+import matplotlib.pyplot as plt
+from typing import List
 
 
-def print_cm(cm, labels, hide_zeroes=False, hide_diagonal=False, hide_threshold=None):
+def confusion_matrix_print(cm, labels, hide_zeroes=False, hide_diagonal=False, hide_threshold=None):
     """pretty print for confusion matrixes"""
     columnwidth = max([len(x) for x in labels] + [5])  # 5 is value length
     empty_cell = " " * columnwidth
@@ -27,27 +30,21 @@ def print_cm(cm, labels, hide_zeroes=False, hide_diagonal=False, hide_threshold=
         print()
 
 
-# Gráfico
-# Visualising the Test set results
-from matplotlib import pyplot as plt
-from matplotlib.colors import ListedColormap
-import numpy as np
+def confusion_matrix_plot(array=None, labels=List[str], normalizar=True, title='Confusion Matrix', **kwargs):
+    array_aux = []
+    if not normalizar:
+        array_aux = array
+    else:
+        for linha in array:
+            total_linha = sum(linha, 0)
+            linha_aux = []
+            for celula in linha:
+                linha_aux.append((float(celula) / float(total_linha)) * 100.0)
+            array_aux.append(linha_aux)
 
-
-def grafico_2d(x_set=None, y_set=None, step_plot=0.01, model=None, title='Title', label_x='x',
-               label_y='y'):
-    if model is not None:
-        x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1, step=step_plot),
-                             np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1, step=step_plot))
-        plt.contourf(x1, x2, model.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
-                     alpha=0.75, cmap=ListedColormap(('red', 'green')))
-        plt.xlim(x1.min(), x1.max())
-        plt.ylim(x2.min(), x2.max())
-        for i, j in enumerate(np.unique(y_set)):
-            plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
-                        c=ListedColormap(('red', 'green'))(i), label=j)
-        plt.title(title)
-        plt.xlabel(label_x)
-        plt.ylabel(label_y)
-        plt.legend()
-        plt.show()
+    df_cm = pd.DataFrame(array_aux, index=[i for i in labels],
+                         columns=[i for i in labels])
+    plt.figure(**kwargs)
+    sn.heatmap(df_cm, annot=True)
+    plt.title(title)
+    plt.show()
